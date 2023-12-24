@@ -45,7 +45,6 @@ const NewPost = ({ userId }) => {
             .then(createdPost => {
                 // Add the newly created post to the userPosts state
                 dispatch(addPosts(createdPost))
-                console.log(userPosts);
                 navigate_back()
             })
             .catch(error => console.error('Error creating post:', error));
